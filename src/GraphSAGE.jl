@@ -41,7 +41,7 @@ module GraphSAGE
         end
     end
 
-    Flux.@treelike AGG;
+    Flux.@functor AGG;
 
 
 
@@ -92,7 +92,7 @@ module GraphSAGE
         return hh;
     end
 
-    Flux.@treelike SAGE;
+    Flux.@functor SAGE;
 
     # transformer
     struct Transformer{F}
@@ -118,7 +118,7 @@ module GraphSAGE
         return h1;
     end
 
-    Flux.@treelike Transformer;
+    Flux.@functor Transformer;
 
 
 
